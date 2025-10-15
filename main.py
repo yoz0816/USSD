@@ -17,6 +17,7 @@ while True:
     # -------------------------------
     # Group 2: Buy Data
     elif option == "2":
+        
         pass   # <-- Group 2: Insert your code here
 
     # -------------------------------
