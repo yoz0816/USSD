@@ -21,9 +21,10 @@ The project is designed for **4 groups** to work on different parts of the progr
 
 ---
 bonus
- Change PIN - Let user change their PIN (advanced). 
- Send Money - Transfer funds to another user (advanced). 
- Lottery - A fun, creative feature (advanced). 
+
+- Change PIN - Let user change their PIN (advanced). 
+- Send Money - Transfer funds to another user (advanced). 
+- Lottery - A fun, creative feature (advanced). 
 ---
 
 ## Instructions for Students
