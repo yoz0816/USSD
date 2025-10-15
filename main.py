@@ -12,22 +12,54 @@ while True:
     # -------------------------------
     # Group 1: Check Balance
     if option == "1":
-        pass   # <-- Group 1: Insert your code here
+        print("you balance is", balance,"birr")
+        
 
     # -------------------------------
     # Group 2: Buy Data
     elif option == "2":
-        
-        pass   # <-- Group 2: Insert your code here
-
+        print("1.100MB in 5 birr")
+        print("2.250MB in 15 birr")
+        print("3.500MB in 25 birr")
+        choice=input("select this choices: ")
+        if choice =="1":
+            if balance>=5:
+                balance-=5
+                print("you have sucessfully purchase 100MB in 5 birr")
+            else:
+                print("you have insufficient balance to purchase this")
+        elif choice=="2":
+             if balance>=15:
+                 balance-=15
+                 print("you have sucessfully purchase 250MB in 15 birr") 
+             else:
+                 print("you have insufficient balance to purchase this")
+        elif choice=="3":
+            if balance>=25:
+                 balance-=25
+                 print("you have sucessfully purchase 500 MB in 25 birr")
+            else :
+                 print("you have insufficient balance to purchase this")
+        else:
+             print("invalid entry\nplease try again")
     # -------------------------------
     # Group 3: Buy Airtime
     elif option == "3":
-        pass   # <-- Group 3: Insert your code here
-
+        try:
+            airtime=int(input("enter airtime amount: "))
+        except Exception as e:
+            print(f"Error: {e}")
+        else:
+            if airtime<= balance:
+                balance -=airtime
+                print("you have sucessfully purchase", balance)
+            else:
+                print("insufficient balance")
+    
     # -------------------------------
     # Group 4: Exit & Invalid Input
     elif option == "4":
-        pass   # <-- Group 4: Insert your code to handle exit here
+        exit()
+
     else:
-        pass   # <-- Group 4: Insert your code to handle invalid input here
+        print("invalid input")
